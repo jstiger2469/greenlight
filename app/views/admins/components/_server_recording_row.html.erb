@@ -76,6 +76,7 @@
         <%= button_to delete_recording_path(meetingID: recording[:meetingID], record_id: recording[:recordID]), method: :delete, class: "dropdown-item", "data-disable": "" do %>
           <i class="dropdown-icon far fa-trash-alt"></i> <%= t("delete") %>
         <% end %>
+        
       </div>
     </div>
   </td>

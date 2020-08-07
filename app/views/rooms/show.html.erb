@@ -19,10 +19,14 @@
     <%= t("room.room_limit_exceeded", difference: @diff) %>
   </div>
 <% end %>
-<div class="background pb-1">
+<div class="background pb-1 special">
   <div class="container">
     <div class="row pt-7 pt-sm-9">
       <div class="col-lg-8 col-sm-12">
+
+
+
+     
         <div id="room-title" class="display-3 form-inline <%= 'edit_hover_class' if current_user.main_room != @room %>" data-path="<%= update_settings_path(@room) %>">
           <% if current_user.main_room == @room %>
             <h1 contenteditable=false id="user-text" class="display-3 text-left mb-3 font-weight-400"><%= @room.name %></h1>

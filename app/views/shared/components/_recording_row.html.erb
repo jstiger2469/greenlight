@@ -82,7 +82,13 @@
         <% end %>
         <%= button_to delete_recording_path(meetingID: recording[:meetingID], record_id: recording[:recordID]), method: :delete, class: "dropdown-item", "data-disable": "" do %>
           <i class="dropdown-icon far fa-trash-alt"></i> <%= t("delete") %>
-        <% end %>
+
+          <% end %>
+                    <div class="dropdown-divider"></div>
+          <%= link_to   "<i class='leftted dropdown-icon far fa-file-alt'></i> Reports".html_safe , "http://174.138.46.250:8080/meeting/#{recording[:recordID]}" %>
+  
+
+    
       </div>
     </div>
   </td>
